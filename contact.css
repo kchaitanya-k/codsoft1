@@ -1,0 +1,206 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(-45deg, rgba(255, 154, 158, 0.6), rgba(250, 208, 196, 0.6), rgba(161, 196, 253, 0.6), rgba(194, 233, 251, 0.6));
+    background-size: cover, 400% 400%;
+    background-blend-mode: overlay;
+    animation: gradientBG 15s ease infinite;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+  }
+  
+  @keyframes gradientBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: white;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .dot {
+    height: 14px;
+    width: 14px;
+    background-color: #6fd3d6;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    margin-left: 25px;
+    color: #000;
+    font-weight: 500;
+  }
+  
+  .main-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 50px 50px;
+    flex: 1;
+  }
+  
+  .main-section img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 60px;
+  }
+  
+  .info {
+    max-width: 500px;
+  }
+  
+  .info h1 {
+    font-size: 36px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  
+  .info h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .info p {
+    margin-top: 10px;
+    line-height: 1.5;
+  }
+  
+  .footer-buttons {
+    margin-top: auto;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: white;
+  }
+  
+  .footer-buttons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 15px 30px;
+    background-color: #007BFF;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    border: 2px solid #0056b3;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .footer-buttons a:hover {
+    background-color: #0056b3;
+    border-color: #004080;
+  }
+  
+  .contact-container {
+    max-width: 600px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .contact-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(pictures/contact.webp);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.25;
+    z-index: 0;
+  }
+  
+  .contact-container > * {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .contact-container h1 {
+    font-size: 36px;
+    margin-bottom: 25px;
+    color: #444;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-align: center;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .contact-item i {
+    margin-right: 10px;
+    color: #007BFF;
+    font-size: 22px;
+  }
+  
+  .contact-item a {
+    background: linear-gradient(90deg, #007BFF, #00c6ff);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .social-links a {
+    margin: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #007BFF;
+    transition: all 0.3s ease;
+    padding: 6px 12px;
+    border: 2px solid #007BFF;
+    border-radius: 10px;
+    display: inline-block;
+    background-color: #f0faff;
+    font-weight: 500;
+  }
+  
+  .social-links a:hover {
+    color: white;
+    background-color: #007BFF;
+    border-color: #0056b3;
+  }
+  

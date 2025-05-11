@@ -1,0 +1,65 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body, html {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Optional gradient */
+    color: #fff;
+}
+
+/* Section Styling */
+#about-me {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional overlay for readability */
+    backdrop-filter: blur(5px);
+}
+
+/* Text Content */
+#about-me div:first-child {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+}
+
+#about-me h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+#about-me p {
+    font-size: 1.3rem;
+    line-height: 1.7;
+}
+
+/* Image Styling */
+#about-me img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #about-me {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #about-me div {
+        padding: 10px;
+    }
+}
