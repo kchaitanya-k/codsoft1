@@ -1,153 +1,85 @@
-body {
+*{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a1c4fd, #c2e9fb);
-    background-size: 400% 400%;
-    animation: gradientBG 15s ease infinite;
-    color: #333;
+    background: linear-gradient(to right, #000000, #434343);
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-  }
-  
-  @keyframes gradientBG {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-  
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 40px;
-    background-color: white;
-  }
-  
-  .logo {
-    display: flex;
-    align-items: center;
-  }
-  
-  .dot {
-    height: 14px;
-    width: 14px;
-    background-color: #6fd3d6;
-    border-radius: 50%;
-    margin-right: 10px;
-  }
-  
-  nav a {
-    text-decoration: none;
-    margin-left: 25px;
-    color: #000;
-    font-weight: 500;
-  }
-  
-  .main-section {
-    display: flex;
     align-items: center;
     justify-content: center;
-    padding: 100px 50px 50px;
-    flex: 1;
-  }
-  
-  .main-section img {
-    width: 400px;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-right: 60px;
-  }
-  
-  .info {
-    max-width: 500px;
-  }
-  
-  .info h1 {
-    font-size: 36px;
-    margin: 0;
-    margin-bottom: 20px;
-  }
-  
-  .info h2 {
-    font-size: 18px;
-    font-weight: 600;
-    margin-top: 0;
-    margin-bottom: 10px;
-  }
-  
-  .info p {
-    margin-top: 10px;
-    line-height: 1.5;
-  }
-  
-  .buttons {
-    margin-top: 40px;
-    display: flex;
-    justify-content: space-between;
-    gap: 15px;
-  }
-  
-  .buttons a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-    border-radius: 50%;
-    width: 90px;
-    height: 90px;
+    
+}
+.container{
+   padding: 20px;
+   background : gray;
+   width: 30%;
+   height: 90vh;
+   border-radius: 10px;
+
+}
+h2{
     text-align: center;
-  }
-  
-  .footer-buttons {
-    margin-top: auto;
-    padding: 40px;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    background-color: white;
-  }
-  
-  .footer-buttons a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: #000;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 30px;
     font-weight: bold;
-    border-radius: 50%;
-    width: 90px;
-    height: 90px;
-  }
-  
-  .resume { background-color: #b7e264; }
-  .research { background-color: #f9a825; }
-  .projects { background-color: #80deea; }
-  .personal { background-color: #ccc; }
-  
-  #contact{
-    margin-top: auto;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    background-color: rgb(64, 169, 134);
-    color: #f4f4f4;
+}
+.container .display{
+    width: 100%;
+    height:15vh;
+    background: black;
     border-radius: 10px;
-  }
-  #contact:hover{
-        background-color: #00c9ff;
-        color: #000;
-        transform: scale(1.02); /* Slight zoom */
-        box-shadow: 0 0 20px rgba(0, 201, 255, 0.5);
-        transition: 0.5s;
-        }
+    color: white;
+    font-size: 80px;
+    font-weight: bold;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: border-color 0.3s ease;
+}
+.container .actions{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px 5px;;
+}
+.container .actions .btn {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.1s ease;
+    width: 20%;
+    height: 10vh;
+    box-shadow: 0 4px 8px rgba(10, 10, 10, 0.3);
+}
+.container .actions .btn:hover {
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.3);
+    background-color: #1a1a1a;
+}
+.container .actions .btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+.container .actions #clear{
+    background-color: #f44336;
+    width: 20%;
+}
+
+
+.container .actions #equals{
+    background-color: #008CBA;
+    width: 47%;
+}
+.container .actions #op{
+    background-color: rgb(234, 176, 67);
+}
